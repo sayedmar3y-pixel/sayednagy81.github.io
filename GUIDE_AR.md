@@ -9,11 +9,19 @@
 
 ## أولًا: النشر (مرة واحدة فقط)
 1. أنشئ حسابًا مجانيًا على <https://github.com> (اختر اسم مستخدم مهنيًا، لأنه سيظهر في الرابط).
-2. اضغط **New repository** وسمّه **`اسم-المستخدم.github.io`** (مثلًا `drsayed.github.io`) واجعله **Public**.
-3. اضغط **uploading an existing file** وارفع **محتويات** مجلد `academic-site` كلها (بما فيها المجلد المخفي `.github`). إن تعذّر رفع المجلد المخفي من المتصفح فاستخدم **GitHub Desktop** (برنامج مجاني بواجهة رسومية).
-4. من **Settings ← Pages** اختر **Source: GitHub Actions**.
-5. افتح تبويب **Actions** وانتظر علامة ✔ خضراء. موقعك على: `https://اسم-المستخدم.github.io`
-6. افتح `content/profile.json` وغيّر `site_url` إلى رابطك الفعلي ثم احفظ.
+2. ثبّت برنامج **GitHub Desktop** المجاني من <https://desktop.github.com> وسجّل الدخول بحسابك.
+3. من **File ← Add local repository** اختر المجلد `C:\academic-site` (المجلد جاهز ومحفوظ فيه أول إصدار).
+4. اضغط **Publish repository**، وسمّه **`اسم-المستخدم.github.io`** (مثلًا `drsayed.github.io`)، و**أزل** علامة "Keep this code private".
+5. على موقع GitHub افتح المستودع ← **Settings ← Pages** ← اختر **Source: GitHub Actions**.
+6. افتح تبويب **Actions** وانتظر علامة ✔ خضراء (دقيقتان تقريبًا). موقعك على: `https://اسم-المستخدم.github.io`
+7. افتح `content/profile.json` وغيّر `site_url` إلى رابطك الفعلي ثم احفظ، ليعمل الـ sitemap وصور المشاركة.
+
+> بعد ذلك: أي تعديل تحفظه على موقع GitHub (أيقونة القلم ✏️) أو من GitHub Desktop (**Commit** ثم **Push**) يُنشر تلقائيًا.
+
+## الملخص المصور لكل بحث
+- يُولَّد تلقائيًا من حقل `visual` في `papers.json`، ويظهر بلون وأيقونة حسب موضوع البحث.
+- لكل بحث صورة PNG بمقاس 1200×630 جاهزة للنشر على LinkedIn وفيسبوك (زر «تحميل الملخص المصور» في صفحة البحث).
+- لتغيير موضوع البحث (اللون والأيقونة) أضف مثلًا `"topic": "energy"`. القيم المتاحة: energy, wind, water, nano, bio, recycle, facade, container, book, building.
 
 ## ثانيًا: تعديل بياناتك
 1. على GitHub افتح `content/profile.json` ← اضغط أيقونة القلم ✏️.
